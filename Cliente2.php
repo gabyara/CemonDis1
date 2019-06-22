@@ -66,7 +66,7 @@
 
 									// This is your Web service server WSDL URL address
 									//-------------------server1-------------------------				
-									$wsdl = "https://cemon-dis1.herokuapp.com/server.php?wsdl";
+									$wsdl = "server.php?wsdl";
 									$name1='Hardware Servidor';
 									$name2='Base de Datos';
 									$name3='Aplicación';
