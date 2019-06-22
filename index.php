@@ -89,27 +89,27 @@
 
 
 									// Call the Monitorear method
-									$result1=$client->call('Monitorear', array('name'=>$name2,'date'=>$date));
-									$Nombre2=$result1["return"];
-									$Dis2=$result1["Disponibilidad"];
+									$result2=$client->call('Monitorear', array('name'=>$name2,'date'=>$date));
+									$Nombre2=$result2["return"];
+									$Dis2=$result2["Disponibilidad"];
 
 	
 									// Call the Monitorear method
-									$result1=$client->call('Monitorear', array('name'=>$name3,'date'=>$date));
-									$Nombre3=$result1["return"];
-									$Dis3=$result1["Disponibilidad"];
+									$result3=$client->call('Monitorear', array('name'=>$name3,'date'=>$date));
+									$Nombre3=$result3["return"];
+									$Dis3=$result3["Disponibilidad"];
 			
 		
 									// Call the Monitorear method
-									$result1=$client->call('Monitorear', array('name'=>$name4,'date'=>$date));
-									$Nombre4=$result1["return"];
-									$Dis4=$result1["Disponibilidad"];
+									$result4=$client->call('Monitorear', array('name'=>$name4,'date'=>$date));
+									$Nombre4=$result4["return"];
+									$Dis4=$result4["Disponibilidad"];
 
 	
 									// Call the Monitorear method
-									$result1=$client->call('Monitorear', array('name'=>$name5,'date'=>$date));
-									$Nombre5=$result1["return"];
-									$Dis5=$result1["Disponibilidad"];
+									$result4=$client->call('Monitorear', array('name'=>$name5,'date'=>$date));
+									$Nombre5=$result4["return"];
+									$Dis5=$result4["Disponibilidad"];
 
 										echo"<center><table>
 										<tr>
