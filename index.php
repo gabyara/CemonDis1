@@ -73,7 +73,7 @@
 									$name4='Enlace Internet';
 									$name5='Router Internet';
 									// Create client object
-									$client = new soapclient($wsdl, 'wsdl');
+									$client = new nusoap_client($wsdl, 'wsdl');
 									$err = $client->getError();
 									if ($err) {
 									   // Display the error
