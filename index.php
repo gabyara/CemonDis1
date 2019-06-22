@@ -62,7 +62,7 @@
 	   								
 	   								$date=$_POST['mes'] .'-'.$_POST['ano'];
 									echo '<center><strong>Fecha consultada: '.$date.'</strong></center><br>';
-									require_once('lib/nusoap.php');
+									require_once('http://cemon-dis1.herokuapp.com/lib/nusoap.php');
 
 									// This is your Web service server WSDL URL address
 									//-------------------server1-------------------------				
