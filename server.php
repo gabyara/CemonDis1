@@ -1,5 +1,5 @@
 <?php
-require_once('lib/nusoap.php');
+require_once('https://cemon-dis1.herokuapp.com/lib/nusoap.php');
 
 // Create the server instance
 $server = new soap_server();
