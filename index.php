@@ -30,7 +30,7 @@
 						<center><?php echo  date("d") ." del " . date("m") . " de " . date("Y");?></center>
 						<br>
 						<p style="text-align: justify;">Seleccione el mes y año en donde desea monitorear la disponibilidad de los servicios de CEMON: <br></p>
-						<form action="Cliente2.php" method="POST">
+						<form action="http://cemon-dis1.herokuapp.com/index.php" method="POST">
 							<center>
 								<select name="mes">
 			      		 			<?php
@@ -62,7 +62,7 @@
 	   								
 	   								$date=$_POST['mes'] .'-'.$_POST['ano'];
 									echo '<center><strong>Fecha consultada: '.$date.'</strong></center><br>';
-									require_once('lib/nusoap.php');
+									require_once('http://cemon-dis1.herokuapp.com/lib/nusoap.php');
 
 									// This is your Web service server WSDL URL address
 									//-------------------server1-------------------------				
