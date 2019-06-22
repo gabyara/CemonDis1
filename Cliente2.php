@@ -30,7 +30,7 @@
 						<center><?php echo  date("d") ." del " . date("m") . " de " . date("Y");?></center>
 						<br>
 						<p style="text-align: justify;">Seleccione el mes y año en donde desea monitorear la disponibilidad de los servicios de CEMON: <br></p>
-						<form action="Cliente2.php" method="POST">
+						<form action="https://cemon-dis1.herokuapp.com/Cliente2.php" method="POST">
 							<center>
 								<select name="mes">
 			      		 			<?php
@@ -66,7 +66,7 @@
 
 									// This is your Web service server WSDL URL address
 									//-------------------server1-------------------------				
-									$wsdl = "http://localhost/Comercio/server.php?wsdl";
+									$wsdl = "https://cemon-dis1.herokuapp.com/server.php?wsdl";
 									$name1='Hardware Servidor';
 									$name2='Base de Datos';
 									$name3='Aplicación';
