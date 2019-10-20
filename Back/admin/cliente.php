@@ -32,7 +32,7 @@
    $Persistencia->GuardarTickets($Tickets);
    $cod=$Tickets->id;
 
-   $ruta = 'http://localhost/proyecto2/admin';
+   $ruta = 'https://hermes-dis1.herokuapp.com/cliente.php';
 
    $cliente = new nusoap_client($ruta."/".$tipo.".php?wsdl",true);
    $cliente -> setEndpoint($ruta."/".$tipo.".php"); 
