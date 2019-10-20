@@ -1,0 +1,3 @@
+[09-Aug-2017 15:41:51 UTC] PHP Warning:  include(../view/form-novedadd.php): failed to open stream: No such file or directory in /home/gltservi/public_html/panel/admin/novedadesadd.php on line 86
+[09-Aug-2017 15:41:51 UTC] PHP Warning:  include(../view/form-novedadd.php): failed to open stream: No such file or directory in /home/gltservi/public_html/panel/admin/novedadesadd.php on line 86
+[09-Aug-2017 15:41:51 UTC] PHP Warning:  include(): Failed opening '../view/form-novedadd.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/gltservi/public_html/panel/admin/novedadesadd.php on line 86
