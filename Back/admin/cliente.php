@@ -37,7 +37,7 @@
    $cliente = new nusoap_client($ruta."/".$tipo.".php?wsdl",true);
    $cliente -> setEndpoint($ruta."/".$tipo.".php"); 
 echo $tipo;
-   if($cod == '' && $tipo == "solicitud"){
+ /*  if($cod == '' && $tipo == "solicitud"){
       $parametros = array('tipo'=>$tipo,'rif'=>$rif,"comprador"=>$comprador,"fecha"=>$fecha,"direc"=>$direc, "productos"=>$productos);
       $data = $cliente->call("MiFuncion", $parametros);
       if ($data == null) {
@@ -57,5 +57,5 @@ echo $tipo;
       }
    }
    
-   echo $data;
+   echo $data;*/
 ?>
