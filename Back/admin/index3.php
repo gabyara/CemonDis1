@@ -73,40 +73,6 @@
 					return "prueba";
 				}
 			</script>	
-			<script type="text/javascript">
-				function Factura() {
-					var emitter = $("#emisor").val();
-					var receiver = $("#receptor").val();
-					var bill_ref_cod = $("#factura").val();
-					var amount = $("#monto").val();
-					var expdate = $("#fechaEx").val();
-					var password = $("#contra").val();
-					var description = $("#des").val();
-					<?php 
-						$authorizationToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzExNjY4MjIsImV4cCI6MTYwMjI3MDgyMiwiZGF0YSI6eyJpZCI6NiwianVzcl9yaWYiOiJKMTIzNDU2Nzg5IiwianVzcl91c2VyIjo5LCJqdXNyX2VtYWlsIjoicmlvc3JpY2FyZG8xMjM0QGhvdG1haWwuY29tIiwianVzcl9jb21wYW55IjoiSGVybWVzIiwianVzcl9hZGRyZXNzIjoiQ2FyYWNhcyIsImp1c3JfcGhvbmUiOiIxMjM0NTY3ODkwIiwicGFzc3dvcmQiOiIkMnkkMTAkVVlJUmVQNFltNEg2dnpHejhQczRjTzdSU2tyMGUuV2xKMjhoLnByXC9SdDRHT0hHYnRSdVBtIiwicV9yZWNvdmVyeSI6IkhvbGE_IiwiYV9yZWNvdmVyeSI6IkJpZW4iLCJhY3RpdmUiOjEsImp1c3JfY3JlYXRlZF9hdCI6IjIwMTktMTAtMTUgMTg6NDc6NDQiLCJqdXNyX3VwZGF0ZWRfYXQiOiIyMDE5LTEwLTE1IDE4OjUwOjU2IiwianVzcl9kZWxldGVkX2F0IjpudWxsfX0.YDd6Yet4TxHOB65RElvDjd5hju9nMoWRf5WbagOYcP4";
-					?>
-					var miToken = '<?php echo $authorizationToken; ?>';
-					$.ajax({
-						type: 'post',
-						beforeSend: function(request) { 
-							request.setRequestHeader("Authorization", miToken); 
-						},
-						headers: {
-							'Authorization': miToken,
-						},
-						url:  'http://bankoneapi.16mb.com/api/bill',
-						data: {"emitter":emitter,"receiver":receiver,"bill_ref_cod":bill_ref_cod,"amount":amount,"expdate":expdate,"description":description},
-						success: function(data) {
-							//json_data = JSON.parse(data);
-							console.log(data);
-						},
-						error: function(data){
-							console.log("Error: ", data);
-						}
-					});
-					return "prueba";
-				}
-			</script>
 
 	</head>
 
