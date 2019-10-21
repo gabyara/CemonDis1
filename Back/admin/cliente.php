@@ -32,7 +32,7 @@
    $Persistencia->GuardarTickets($Tickets);
    $cod=$Tickets->id;
 
-   $ruta = 'https://glt.com.ve/dist1/Back/admin';
+   $ruta = 'glt.com.ve/dist1/Back/admin';
 
    $cliente = new nusoap_client($ruta."/".$tipo.".php?wsdl",true);
    $cliente -> setEndpoint($ruta."/".$tipo.".php"); 
