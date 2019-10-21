@@ -44,35 +44,7 @@
 		<script src="assets/js/html5shiv.min.js"></script>
 		<script src="assets/js/respond.min.js"></script>
 		<![endif]-->
-		<script type="text/javascript" src="./jquery/jquery.3.4.js"></script>
-			<script type="text/javascript">
-				function Solicitar() {
-					var tipo = $("#tipo").val();
-					var cod = $("#codigo").val();
-					var rif = $("#rif").val();
-					var comprador = $("#comprador").val();
-					var fecha = $("#fecha").val();
-					var direc = $("#direc").val();
-					var productos = document.getElementById("productos").value;
-					
-					$.ajax({
-						type: 'post',
-						url:  './cliente.php',
-						data: {"tipo":tipo,"cod":cod,"rif":rif,"comprador":comprador,"fecha":fecha,"productos":productos,"direc":direc},
-						success: function(data) {
-							json_data = JSON.parse(data);
-							console.log(json_data);
-							$("#fechafin").html(json_data.fechaF)
-							$("#costo").html(json_data.costo)
-							$("#error").html(json_data.error)
-						},
-						error: function(data){
-							console.log("Error: ", data);
-						}
-					});
-					return "prueba";
-				}
-			</script>	
+		<script type="text/javascript" src="./jquery/jquery.3.4.js"></script>	
 			<script type="text/javascript">
 				function Factura() {
 					var emitter = $("#emisor").val();
